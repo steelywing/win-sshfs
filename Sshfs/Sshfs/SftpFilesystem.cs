@@ -1587,8 +1587,8 @@ namespace Sshfs
 
         public event EventHandler<EventArgs> Disconnected
         {
-            add { Session.Disconnected += value; }
-            remove { Session.Disconnected -= value; }
+            add { this.Session.Disconnected += value; }
+            remove { this.Session.Disconnected -= value; }
         }
 
         #endregion
